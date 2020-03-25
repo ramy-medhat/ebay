@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom'
 
 import { Modal, Row, Col, Card, Button, Form } from "react-bootstrap";
 import { ArrowLeft, Envelope } from 'react-bootstrap-icons';
-import { BackButton, DetailsWrapper, ItemCard, ItemCardBody, ItemImage } from './style.css';
-
+import { BackButton, 
+         DetailsWrapper, 
+         ItemCard, 
+         ItemCardBody, 
+         ItemImage, 
+         ItemSendMessage, 
+         SendMessage} from './style.css';
 
 const Details = () => {
    const [details, setDetails] = useState([]);
@@ -23,7 +28,7 @@ const Details = () => {
    return (
       <DetailsWrapper data-testid='container'>
          <Row className="show-grid">
-            <Col xs={12} md={6}>
+            <Col xs={12} md={9}>
                <BackButton as={Link} to='/ads'>
                   <ArrowLeft /> Back to result page
                </BackButton>
@@ -37,10 +42,10 @@ const Details = () => {
                         {details.description}
                      </Card.Text>
                      <hr style={{ margin: '0 0 0.8em' }} />
-                     <Button variant="primary" onClick={handleShow}>
-                     <Envelope/>  Write message
-                     </Button>
-                     <Modal show={show} onHide={handleClose} animation={false}>
+                     <ItemSendMessage variant="primary" onClick={handleShow}>
+                        <Envelope/>  Write message
+                     </ItemSendMessage>
+                     <Modal show={show} onHide={handleClose} animation={false}> 
                         <Modal.Header closeButton>
                            <Modal.Title>Contact us</Modal.Title>
                         </Modal.Header>
@@ -65,6 +70,11 @@ const Details = () => {
                      </Modal>
                   </ItemCardBody>
                </ItemCard>
+            </Col>
+            <Col xs={12} md={3}>
+               <SendMessage variant="primary" onClick={handleShow}>
+                  <Envelope/>  Write message
+               </SendMessage>
             </Col>
          </Row>
       </DetailsWrapper>
