@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshots 1`] = `
+<div
+  className="stylecss__DetailsWrapper-w570fz-0 cUjXbf container"
+  data-testid="container"
+>
+  <div
+    className="show-grid row"
+  >
+    <div
+      className="col-md-6 col-12"
+    >
+      <a
+        className="stylecss__BackButton-w570fz-1 dIUkdP"
+        to="/ads"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M5.854 4.646a.5.5 0 010 .708L3.207 8l2.647 2.646a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z"
+            fillRule="evenodd"
+          />
+          <path
+            clipRule="evenodd"
+            d="M2.5 8a.5.5 0 01.5-.5h10.5a.5.5 0 010 1H3a.5.5 0 01-.5-.5z"
+            fillRule="evenodd"
+          />
+        </svg>
+         Back to result page
+      </a>
+      <div
+        className="stylecss__ItemCard-w570fz-2 cvBXbg card"
+      >
+        <div
+          className="card-title h5"
+        />
+        <img
+          className="stylecss__ItemImage-w570fz-4 cNjKFl"
+        />
+        <h5>
+          Description
+        </h5>
+        <hr
+          style={
+            Object {
+              "margin": "0 0 0.8em",
+            }
+          }
+        />
+        <div
+          className="stylecss__ItemCardBody-w570fz-3 hpOFfu"
+        >
+          <p
+            className="card-text"
+          />
+          <hr
+            style={
+              Object {
+                "margin": "0 0 0.8em",
+              }
+            }
+          />
+          <button
+            className="btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z"
+                fillRule="evenodd"
+              />
+              <path
+                clipRule="evenodd"
+                d="M.071 4.243a.5.5 0 01.686-.172L8 8.417l7.243-4.346a.5.5 0 01.514.858L8 9.583.243 4.93a.5.5 0 01-.172-.686z"
+                fillRule="evenodd"
+              />
+              <path
+                d="M6.752 8.932l.432-.252-.504-.864-.432.252.504.864zm-6 3.5l6-3.5-.504-.864-6 3.5.504.864zm8.496-3.5l-.432-.252.504-.864.432.252-.504.864zm6 3.5l-6-3.5.504-.864 6 3.5-.504.864z"
+              />
+            </svg>
+              Write message
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

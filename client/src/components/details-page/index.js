@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
+
 import { Modal, Row, Col, Card, Button, Form } from "react-bootstrap";
 import { ArrowLeft, Envelope } from 'react-bootstrap-icons';
 import { BackButton, DetailsWrapper, ItemCard, ItemCardBody, ItemImage } from './style.css';
@@ -19,10 +21,10 @@ const Details = () => {
    }, [])
 
    return (
-      <DetailsWrapper>
+      <DetailsWrapper data-testid='container'>
          <Row className="show-grid">
             <Col xs={12} md={6}>
-               <BackButton to='/ads'>
+               <BackButton as={Link} to='/ads'>
                   <ArrowLeft /> Back to result page
                </BackButton>
                <ItemCard>

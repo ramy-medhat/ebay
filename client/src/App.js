@@ -5,7 +5,6 @@ import Details from './components/details-page';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
-import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 class App extends Component {
 state = {

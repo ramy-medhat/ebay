@@ -1,15 +1,15 @@
 import styled from 'styled-components/macro'
-import { Link } from 'react-router-dom'
-import { Container, Row, Col, Card, Button } from "react-bootstrap"
+import { Container, Card} from "react-bootstrap"
 
 export const DetailsWrapper = styled(Container)`
     padding: 1.5rem 0;
 `
 
-export const BackButton = styled(Link)`
+export const BackButton = styled.a`
     color:black;
     margin-bottom: 2em;
     display: block;
+    cursor: pointer;
 
     &:hover{
         color: #007bff;
