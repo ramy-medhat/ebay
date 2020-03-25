@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Link,BrowserRouter as Router, Switch } from 'react-router-dom'
 import Ads from './components/ads';
-import Details from './components/details';
+import Details from './components/details-page';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
